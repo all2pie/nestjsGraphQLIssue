@@ -1,0 +1,26 @@
+# ------------------------------------------------------
+# THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
+# ------------------------------------------------------
+
+type Toy {
+  name: String!
+  isBroken: Boolean!
+}
+
+type Cat {
+  toy: Toy!
+  name: String!
+  isLazy: Boolean
+}
+
+type Query {
+  getHello: String!
+}
+
+type Mutation {
+  createCat(catCreate: CatCreate!): Cat!
+}
+
+input CatCreate {
+  name: String!
+}
